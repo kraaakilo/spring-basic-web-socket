@@ -6,7 +6,7 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class WebSocketController {jekked
+public class WebSocketController {
     @MessageMapping("/message")
     @SendTo("/receiver")
     public Message handle(Message message){
